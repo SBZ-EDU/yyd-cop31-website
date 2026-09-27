@@ -159,6 +159,10 @@ h2{font-size:30px;color:var(--g-900);margin-bottom:8px}
 
 /* form */
 form{display:grid;gap:14px;background:#fff;border:1.4px solid var(--line);border-radius:var(--rad);padding:26px;box-shadow:var(--shadow)}
+.contact-form{max-width:720px}
+.form-status{font-size:13.5px;font-weight:700}
+.form-status.ok{color:var(--g-700)}
+.form-status.err{color:#a30d25}
 label{font-size:13px;font-weight:700;color:var(--g-900)}
 input,textarea,select{width:100%;font:inherit;font-size:14.5px;padding:11px 14px;border:1.4px solid #d7e5dc;border-radius:9px;
                       background:#fbfefc;color:var(--ink);margin-top:5px}
@@ -198,6 +202,27 @@ input:focus,textarea:focus,select:focus{outline:2px solid var(--g-300);border-co
 }
 @media (max-width:620px){
   .grid-4,.grid-3,.steps,.cgrid,.grid-2,.days,.foot-grid{grid-template-columns:1fr}
-  .nav{flex-direction:column;align-items:flex-start}
+  .nav{flex-direction:column;align-items:flex-start;gap:10px;padding:12px 16px 10px}
+  .bname{font-size:13.5px}
+  .bcop{font-size:10px}
+  .menu{flex-wrap:nowrap;overflow-x:auto;width:100%;gap:4px;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .menu::-webkit-scrollbar{display:none}
+  .menu a{white-space:nowrap;padding:8px 12px;font-size:13.5px}
   .hero h1{font-size:30px}
+  .wrap{padding:0 18px}
+}
+
+/* ---------- v2: sertleştirme + UX ---------- */
+.mt-12{margin-top:12px}
+.mt-22{margin-top:22px}
+.btn-sm{font-size:13.5px;padding:10px 18px}
+.phero .lead{margin-bottom:0}
+.yyd-mark{color:var(--red)}
+.day .yyd-mark{color:var(--red)}
+.ccard .v a{color:var(--g-900);font-weight:700}
+@media (max-width:620px){
+  .foot .fqr{flex-wrap:wrap;row-gap:14px}
+  .foot .fqr img{width:72px;height:72px}
+  .foot .fqr .ql{max-width:64px}
+  .foot-bottom{flex-direction:column;gap:4px}
 }
